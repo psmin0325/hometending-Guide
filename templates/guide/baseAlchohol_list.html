@@ -1,8 +1,8 @@
-{% if baseAlchohol_list %}
-    <p>이미지 화면</p>
-    <!--{% for alc in baseAlchohol_list %}
-        <a href="/pybo/{{ question.id }}/">{{ question.subject }}</a>
-    {% endfor %}-->
-{% else %}
-    <p>화면이 아직 없습니다.</p>
-{% endif %}
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p>기주 화면</p>
+<button class="favorite styled" type="button" onclick="location.href='{% url 'guide:support' %}'">
+        <img src="{% static 'img/vodka.jpg' %}" style="display:block;">보드카
+</button>
+{% endblock %}
