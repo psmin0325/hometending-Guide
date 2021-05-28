@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<p>화면이 아직 없습니다.</p>
-<button class="favorite styled" type="button" onclick="location.href='{% url 'guide:index' %}'"> <!--/guide/second/-->
-        보조주 이미지 삽입예정
+<p>보조주 화면</p>
+<button class="favorite styled" type="button" name="orange" onclick="location.href='{% url 'guide:additives' %}'"> <!--/guide/second/-->
+        <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">오렌지 주스
+</button>
+{% if }
+<button class="favorite styled" type="button" name="cranberry" onclick="location.href='{% url 'guide:additives' %}'"> <!--/guide/second/-->
+        <img src="{% static 'img/cranberry_juice.jpg' %}" style="display:block;">크랜베리 주스
 </button>
 {% endblock %}

@@ -2,7 +2,10 @@
 {% load static %}
 {% block content %}
 <p>기주 화면</p>
-<button class="favorite styled" type="button" onclick="location.href='{% url 'guide:support' %}'">
+<button class="vodka-btn" type="button" name="vodka" onclick="location.href='{% url 'guide:support' %}'">
         <img src="{% static 'img/vodka.jpg' %}" style="display:block;">보드카
+</button>
+<button class="rum-btn" type="button" name = "rum" onclick="location.href='{% url 'guide:support' %}'">
+        <img src="{% static 'img/rum.jpg' %}" style="display:block;">럼
 </button>
 {% endblock %}

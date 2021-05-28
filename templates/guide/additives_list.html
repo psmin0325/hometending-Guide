@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p>첨가물 화면</p>
+<button class="favorite styled" type="button" name="ice" onclick="location.href='{% url 'guide:result' %}'"> <!--/guide/second/-->
+        <img src="{% static 'img/ice.jpg' %}" style="display:block;">얼음
+</button>
+<button class="favorite styled" type="button" name="lime" onclick="location.href='{% url 'guide:result' %}'"> <!--/guide/second/-->
+        <img src="{% static 'img/lime.jpg' %}" style="display:block;">라임
+</button>
+{% endblock %}
