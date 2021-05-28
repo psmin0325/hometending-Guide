@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p>첨가물 화면</p>
+<button type="button" onclick="location.href='{% url 'guide:v_o_ice_result' %}'">
+        <img src="{% static 'img/ice.jpg' %}" style="display:block;">얼음
+</button>
+{% endblock %}

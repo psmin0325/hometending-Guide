@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p>첨가물 화면</p>
+<button type="button" onclick="location.href='{% url 'guide:r_c_lime_result' %}'">
+        <img src="{% static 'img/lime.jpg' %}" style="display:block;">라임
+</button>
+{% endblock %}
