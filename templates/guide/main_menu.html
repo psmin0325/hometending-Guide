@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h3>홈텐딩 길라잡이에 오신것을 환영합니다.</h3>
+<div class="container my-3">
+        <p>시작하기</p>
+        <div>
+
+        </div>
+        <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                <img src="{% static 'img/malibu_orange.jpg' %}" style="display:block;"> 홈텐딩 길라잡이 시작하기
+        </button>
+        <button type="button">
+            <img src="{% static 'img/bartending.jpg' %}" style="display:block;">그밖의 정보들
+        </button>
+</div>
+{% endblock %}

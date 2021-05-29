@@ -3,17 +3,20 @@ from django.http import HttpResponse
 #from .models import baseAlchohol
 from django.shortcuts import render
 
-baseAlc = -1
-secondAlc = -1
-addi = -1
-
 def index(request):
+    """
+    시작화면
+    """
+    baseAlchol = {"vodka": 0, "rum": 1}
+    return render(request, 'guide/main_menu.html')
+    #return HttpResponse("안녕하세요. 홈텐딩 길라잡이에 오신것을 환영합니다.")
+
+def baseAlchohol(request):
     """
     기주 목록 출력
     """
     baseAlchol = {"vodka": 0, "rum": 1}
-    return render(request, 'guide/baseAlchohol_list.html', baseAlchol)
-    #return HttpResponse("안녕하세요. 홈텐딩 길라잡이에 오신것을 환영합니다.")
+    return render(request, 'guide/baseAlchohol_list.html')
 
 def vodka(request):
     """

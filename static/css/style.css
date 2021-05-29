@@ -2,3 +2,12 @@ img {
   width: 250px;
   height: 300px;
 }
+body {
+  color: white;
+  background-image: url('/static/img/bar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  border-radius: 5px;
+}

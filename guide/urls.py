@@ -7,6 +7,8 @@ app_name='guide'
 urlpatterns = [
     path('', views.index, name='index'),
 
+    path('select/', views.baseAlchohol, name='base'),
+
     #vodka 영역
     path('vodka/', views.vodka, name='vodka'),
     path('vodka/orange/', views.v_orange, name='v_orange'),
