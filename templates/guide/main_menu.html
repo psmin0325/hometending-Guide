@@ -4,11 +4,12 @@
 <h3>홈텐딩 길라잡이에 오신것을 환영합니다.</h3>
 <div class="container my-3">
         <div>
+                <div style="font-size:18px; color:white;" align="center">
+                        <p>홈텐딩 길라잡이는 집에 있는 재료들로 만들수 있는 칵테일 제조법을 알려주는 사이트입니다.</p>
+                        <p>처음 방문하신 분이라면 "길라잡이 활용하기" 페이지에서 사용방법을 확인하시는 것을 추천합니다.</p>
+                </div>
         <table class="table">
-                <tr>
-                        <td><h3 style="color:white">홈텐딩 길라잡이는<br> 집에 있는 재료들로 만들수 있는<br> 간단한 칵테일 제조법을 알려주는 사이트입니다.</h3></td>
-                </tr>
-                <tr>
+                <tr align="center">
                         <td>
                                 <button type="button" onclick="location.href='{% url 'guide:base' %}'">
                                 <img src="{% static 'img/malibu_orange.jpg' %}" style="display:block;"> 홈텐딩 길라잡이 시작하기
@@ -16,13 +17,26 @@
                         </td>
                         <td>
                                 <button type="button">
-                                <img src="{% static 'img/bartending.jpg' %}" style="display:block;">그밖의 정보들
+                                <img src="{% static 'img/bartending.jpg' %}" style="display:block;"> 길라잡이 활용하기
+                                </button>
+                        </td>
+                </tr>
+                <tr>
+
+                </tr>
+                <tr align="center">
+                        <td>
+                                <button type="button">
+                                <img src="{% static 'img/malibu_orange.jpg' %}" style="display:block;"> 그외 정보들
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button">
+                                <img src="{% static 'img/bartending.jpg' %}" style="display:block;"> 나만의 칵테일 만들어보기
                                 </button>
                         </td>
                 </tr>
         </table>
         </div>
-
-
 </div>
 {% endblock %}
