@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 #from .models import baseAlchohol
 from django.shortcuts import render
-from .models import baseAlchohol
 
 def index(request):
     """
@@ -38,17 +37,77 @@ def voi_result(request):
     """
     return render(request, 'guide/result/voiResult.html')
 
+def vog_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vogResult.html')
+
 def v_cranberry(request):
     """
     v_orange 목록 출력
     """
     return render(request, 'guide/additives/v_cranberry.html')
 
-def voc_result(request):
+def vcl_result(request):
     """
     결과 화면 출력
     """
-    return render(request, 'guide/result/vocResult.html')
+    return render(request, 'guide/result/vclResult.html')
+
+def vcg_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vcgResult.html')
+
+def vclj_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vcljResult.html')
+
+def vco_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vcoResult.html')
+
+def vlj_result(request):
+    """
+    v_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/vljResult.html')
+
+def v_tonic(request):
+    """
+    v_tonic 목록 출력
+    """
+    return render(request, 'guide/additives/v_tonic.html')
+
+def vtl_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vtlResult.html')
+
+def v_gingerbeer(request):
+    """
+    v_tonic 목록 출력
+    """
+    return render(request, 'guide/additives/v_gingerbeer.html')
+
+def vgl_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vglResult.html')
+
+def vc_result(request):
+    """
+    결과 화면 출력
+    """
+    return render(request, 'guide/result/vcResult.html')
 
 def rum(request):
     """

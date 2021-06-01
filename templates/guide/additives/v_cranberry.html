@@ -1,8 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p>첨가물 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:v_o_cranberry_result' %}'">
+<p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
+<button type="button" onclick="location.href='{% url 'guide:v_c_lime_result' %}'">
         <img src="{% static 'img/lime.jpg' %}" style="display:block;">라임
+</button>
+<button type="button" onclick="location.href='{% url 'guide:v_c_grapefruit_result' %}'">
+        <img src="{% static 'img/grapefruit.jpg' %}" style="display:block;">자몽주스
+</button>
+<button type="button" onclick="location.href='{% url 'guide:v_c_limejuice_result' %}'">
+        <img src="{% static 'img/lime_juice.jpg' %}" style="display:block;">라임주스
+</button>
+<button type="button" onclick="location.href='{% url 'guide:v_c_orangejuice_result' %}'">
+        <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">오렌지 주스
 </button>
 {% endblock %}

@@ -1,11 +1,43 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p>보조주 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:v_orange' %}'">
-        <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">오렌지 주스
-</button>
-<button type="button" onclick="location.href='{% url 'guide:v_cranberry' %}'">
-        <img src="{% static 'img/cranberry_juice.jpg' %}" style="display:block;">크랜베리 주스
-</button>
+<p style="font-size:18px; color:white;" align="center">두번째로 넣고 싶은 재료를 골라주세요</p>
+<div class="container my-3">
+        <table class="table">
+                <tr>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:v_orange' %}'">
+                                <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">오렌지 주스
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:v_cranberry' %}'">
+                                <img src="{% static 'img/cranberry_juice.jpg' %}" style="display:block;">크랜베리 주스
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:v_limejuice_result' %}'">
+                                <img src="{% static 'img/lime_juice.jpg' %}" style="display:block;">라임 주스
+                                </button>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:v_tonic' %}'">
+                                <img src="{% static 'img/tonic.jpg' %}" style="display:block;">토닉 워터
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:v_gingerbeer' %}'">
+                                <img src="{% static 'img/ginger_beer.jpg' %}" style="display:block;">진저비어
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:v_cola_result' %}'">
+                                <img src="{% static 'img/cola.jpg' %}" style="display:block;">콜라
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

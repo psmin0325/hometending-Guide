@@ -1,8 +1,8 @@
 from django.db import models
 
-class baseAlchohol(models.Model):
-    img = models.ImageField()
-    name = models.CharField(max_length = 10)
+# class baseAlchohol(models.Model):
+#     img = models.ImageField()
+#     name = models.CharField(max_length = 10)
 #
 # class supportAlchohol(models.Model):
 #     img = models.ImageField()
