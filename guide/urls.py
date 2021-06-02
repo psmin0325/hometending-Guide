@@ -30,10 +30,24 @@ urlpatterns = [
     path('vodka/gingerbeer/', views.v_gingerbeer, name='v_gingerbeer'),
     path('vodka/gingerbeer/lime_result', views.vgl_result, name='v_g_lime_result'),
 
+
     #path('vodka/cranberry/', views.v_c_add, name='cranberry'),
     path('rum/', views.rum, name='rum'),
     path('rum/orange/', views.r_orange, name='r_orange'),
     path('rum/orange/ice_result', views.roi_result, name='r_o_ice_result'),
     path('rum/cola/', views.r_cola, name='r_cola'),
     path('rum/cola/lime_result', views.rcl_result, name='r_c_lime_result'),
+
+
+    path('gin/', views.gin, name='gin'),
+    path('gin/limejuice/', views.g_limejuice, name='g_limejuice'),
+    path('gin/limejuice/sugar_result', views.gls_result, name='g_l_sugar_result'),
+    path('gin/limejuice/sparkling_result', views.glsp_result, name='g_l_sparkling_result'),
+    path('gin/limejuice/cider_result', views.glc_result, name='g_l_cider_result'),
+    path('gin/limejuice/tonic_result', views.glt_result, name='g_l_tonic_result'),
+
+    path('gin/grapefruit/', views.ggf_result, name='ggf_result'),
+
+    path('gin/gingerbeer/', views.g_gingerbeer, name='g_gingerbeer'),
+    path('gin/gingerbeer/sparkling_result', views.ggs_result, name='g_g_sparkling_result'),
 ]

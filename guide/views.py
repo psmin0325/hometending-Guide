@@ -138,3 +138,57 @@ def rcl_result(request):
     r_orange 목록 출력
     """
     return render(request, 'guide/result/rclResult.html')
+
+def gin(request):
+    """
+    support_vodka 목록 출력
+    """
+    return render(request, 'guide/support/gin.html')
+
+def g_limejuice(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/g_limejuice.html')
+
+def gls_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/glsResult.html')
+
+def glsp_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/glspResult.html')
+
+def glc_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/glcResult.html')
+
+def glt_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/gltResult.html')
+
+def ggf_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/ggfResult.html')
+
+def g_gingerbeer(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/g_gingerbeer.html')
+
+def ggs_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/ggsResult.html')
