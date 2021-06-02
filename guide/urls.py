@@ -80,6 +80,21 @@ urlpatterns = [
     path('tequila/lemonjuice/sugar_result', views.tls_result, name='t_l_sugar_result'),
 
     path('tequila/limejuice/', views.t_limejuice, name='t_limejuice'),
-    path('tequila/limejuice/grenadine_result', views.tlg_result, name='t_l_grenadine_result'),
-    path('tequila/limejuice/cola_result', views.tlc_result, name='t_l_cola_result'),
+    path('tequila/limejuice/grenadine_result/', views.tlg_result, name='t_l_grenadine_result'),
+    path('tequila/limejuice/cola_result/', views.tlc_result, name='t_l_cola_result'),
+
+    path('non/', views.non, name='non'),
+    path('non/lemonade/', views.n_lemonade, name='n_lemonade'),
+    path('non/lemonade/orange/', views.n_l_orange, name='n_l_orange'),
+    path('non/lemonade/orange/pineapple_result/', views.nlop_result, name='n_l_o_pineapple_result'),
+    path('non/lemonade/eggwhite/', views.n_l_eggwhite, name='n_l_eggwhite'),
+    path('non/lemonade/eggwhite/sugar_result/', views.nles_result, name='n_l_e_sugar_result'),
+
+    path('non/grenadine/', views.n_grenadine, name='n_grenadine'),
+    path('non/grenadine/gingerbeer_result/', views.ngg_result, name='n_g_gingerbeer_result'),
+    path('non/grenadine/orange_result/', views.ngo_result, name='n_g_orange_result'),
+
+    path('non/limejuice/', views.n_limejuice, name='n_limejuice'),
+    path('non/limejuice/sparkling/', views.n_l_sparkling, name='n_l_sparkling'),
+    path('non/limejuice/sparkling/sugar_result/', views.nlss_result, name='n_l_s_sugar_result'),
 ]

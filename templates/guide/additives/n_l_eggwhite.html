@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p style="font-size:18px; color:white;" align="center">세번째로 넣고 싶은 재료를 선택해주세요</p>
+<button type="button" onclick="location.href='{% url 'guide:n_l_eggwhite' %}'">
+        <img src="{% static 'img/eggwhite.jpg' %}" style="display:block;">계란 흰자
+</button>
+{% endblock %}

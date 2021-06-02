@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p style="font-size:18px; color:white;" align="center">두번째로 넣고 싶은 재료를 선택해주세요</p>
+<button type="button" onclick="location.href='{% url 'guide:n_g_orange_result' %}'">
+        <img src="{% static 'img/grenadine.jpg' %}" style="display:block;">오렌지주스
+</button>
+<button type="button" onclick="location.href='{% url 'guide:n_g_gingerbeer_result' %}'">
+        <img src="{% static 'img/ginger_beer.jpg' %}" style="display:block;">진저비어
+</button>
+{% endblock %}

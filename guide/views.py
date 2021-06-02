@@ -330,3 +330,75 @@ def tlc_result(request):
     g_limejuice 목록 출력
     """
     return render(request, 'guide/result/tlcResult.html')
+
+def non(request):
+    """
+    whisky 목록 출력
+    """
+    return render(request, 'guide/support/non.html')
+
+def n_lemonade(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/n_lemonade.html')
+
+def n_l_orange(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/n_l_orange.html')
+
+def nlop_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/nlopResult.html')
+
+def n_l_eggwhite(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/n_l_eggwhite.html.html')
+
+def nles_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/nlesResult.html')
+
+def n_grenadine(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/n_grenadine.html')
+
+def ngg_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/nggResult.html')
+
+def ngo_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/ngoResult.html')
+
+def n_limejuice(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/n_limejuice.html')
+
+def n_l_sparkling(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/n_l_sparkling.html')
+
+def nlss_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/nlssResult.html')
