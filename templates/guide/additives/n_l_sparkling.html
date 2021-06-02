@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p style="font-size:18px; color:white;" align="center">세번째로 넣고 싶은 재료를 선택해주세요</p>
-<button type="button" onclick="location.href='{% url 'guide:n_l_s_sugar_result' %}'">
-        <img src="{% static 'img/sugar.jpg' %}" style="display:block;">설탕
-</button>
+<div class="container my-3">
+        <p style="font-size:18px; color:white;" align="center">세번째로 넣고 싶은 재료를 선택해주세요</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:n_l_s_sugar_result' %}'">
+                                        <img src="{% static 'img/sugar.jpg' %}" style="display:block;">설탕
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

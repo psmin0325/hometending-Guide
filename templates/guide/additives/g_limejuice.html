@@ -1,17 +1,33 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
-<button type="button" onclick="location.href='{% url 'guide:g_l_sugar_result' %}'">
-        <img src="{% static 'img/sugar.jpg' %}" style="display:block;">설탕
-</button>
-<button type="button" onclick="location.href='{% url 'guide:g_l_sparkling_result' %}'">
-        <img src="{% static 'img/sparkling_water.jpg' %}" style="display:block;">탄산수
-</button>
-<button type="button" onclick="location.href='{% url 'guide:g_l_cider_result' %}'">
-        <img src="{% static 'img/cider.jpg' %}" style="display:block;">사이다
-</button>
-<button type="button" onclick="location.href='{% url 'guide:g_l_tonic_result' %}'">
-        <img src="{% static 'img/tonic.jpg' %}" style="display:block;">토닉워터
-</button>
+<div class="container my-3">
+        <p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:g_l_sugar_result' %}'">
+                                        <img src="{% static 'img/sugar.jpg' %}" style="display:block;">설탕
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:g_l_sparkling_result' %}'">
+                                        <img src="{% static 'img/sparkling_water.jpg' %}" style="display:block;">탄산수
+                                </button>
+                        </td>
+                </tr>
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:g_l_cider_result' %}'">
+                                        <img src="{% static 'img/cider.jpg' %}" style="display:block;">사이다
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:g_l_tonic_result' %}'">
+                                        <img src="{% static 'img/tonic.jpg' %}" style="display:block;">토닉워터
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

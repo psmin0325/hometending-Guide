@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
-<button type="button" onclick="location.href='{% url 'guide:r_o_ice_result' %}'">
-        <img src="{% static 'img/ice.jpg' %}" style="display:block;">얼음
-</button>
+<div class="container my-3">
+        <p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:r_o_ice_result' %}'">
+                                        <img src="{% static 'img/ice.jpg' %}" style="display:block;">얼음
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

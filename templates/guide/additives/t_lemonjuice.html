@@ -1,11 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
-<button type="button" onclick="location.href='{% url 'guide:t_l_pineapple_result' %}'">
-        <img src="{% static 'img/pineapple_juice.jpg' %}" style="display:block;">파인애플주스
-</button>
-<button type="button" onclick="location.href='{% url 'guide:t_l_sugar_result' %}'">
-        <img src="{% static 'img/sugar.jpg' %}" style="display:block;">설탕
-</button>
+<div class="container my-3">
+        <p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:t_l_pineapple_result' %}'">
+                                        <img src="{% static 'img/pineapple_juice.jpg' %}" style="display:block;">파인애플주스
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:t_l_sugar_result' %}'">
+                                        <img src="{% static 'img/sugar.jpg' %}" style="display:block;">설탕
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

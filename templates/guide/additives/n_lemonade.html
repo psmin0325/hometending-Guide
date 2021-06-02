@@ -1,8 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<p style="font-size:18px; color:white;" align="center">두번째로 넣고 싶은 재료를 선택해주세요</p>
-<button type="button" onclick="location.href='{% url 'guide:n_l_orange' %}'">
-        <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">오렌지주스
-</button>
+<div class="container my-3">
+        <p style="font-size:18px; color:white;" align="center">두번째로 넣고 싶은 재료를 선택해주세요</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:n_l_orange' %}'">
+                                        <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">오렌지주스
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:n_l_eggwhite' %}'">
+                                        <img src="{% static 'img/eggwhite.jpg' %}" style="display:block;">계란 흰자
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
+
+
 {% endblock %}

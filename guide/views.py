@@ -359,7 +359,7 @@ def n_l_eggwhite(request):
     """
     g_limejuice 목록 출력
     """
-    return render(request, 'guide/additives/n_l_eggwhite.html.html')
+    return render(request, 'guide/additives/n_l_eggwhite.html')
 
 def nles_result(request):
     """
