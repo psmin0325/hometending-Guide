@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
+<button type="button" onclick="location.href='{% url 'guide:t_l_grenadine_result' %}'">
+        <img src="{% static 'img/grenadine.jpg' %}" style="display:block;">그레나딘 시럽
+</button>
+<button type="button" onclick="location.href='{% url 'guide:t_l_cola_result' %}'">
+        <img src="{% static 'img/cola.jpg' %}" style="display:block;">콜라
+</button>
+{% endblock %}

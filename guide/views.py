@@ -276,3 +276,57 @@ def wc_result(request):
     g_limejuice 목록 출력
     """
     return render(request, 'guide/result/wcResult.html')
+
+def tequila(request):
+    """
+    whisky 목록 출력
+    """
+    return render(request, 'guide/support/tequila.html')
+
+def t_orangejuice(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/t_orangejuice.html')
+
+def tog_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/togResult.html')
+
+def t_lemonjuice(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/t_lemonjuice.html')
+
+def tlp_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/tlpResult.html')
+
+def tls_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/tlsResult.html')
+
+def t_limejuice(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/t_limejuice.html')
+
+def tlg_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/tlgResult.html')
+
+def tlc_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/tlcResult.html')

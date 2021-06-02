@@ -70,4 +70,16 @@ urlpatterns = [
     path('whisky/sparkling/sugar_result/', views.wss_result, name='w_s_sugar_result'),
 
     path('whisky/cola_result/', views.wc_result, name='wc_result'),
+
+    path('tequila/', views.tequila, name='tequila'),
+    path('tequila/orangejuice/', views.t_orangejuice, name='t_orangejuice'),
+    path('tequila/orangejuice/grenadine_result', views.tog_result, name='t_o_grenadine_result'),
+
+    path('tequila/lemonjuice/', views.t_lemonjuice, name='t_lemonjuice'),
+    path('tequila/lemonjuice/pineapple_result', views.tlp_result, name='t_l_pineapple_result'),
+    path('tequila/lemonjuice/sugar_result', views.tls_result, name='t_l_sugar_result'),
+
+    path('tequila/limejuice/', views.t_limejuice, name='t_limejuice'),
+    path('tequila/limejuice/grenadine_result', views.tlg_result, name='t_l_grenadine_result'),
+    path('tequila/limejuice/cola_result', views.tlc_result, name='t_l_cola_result'),
 ]
