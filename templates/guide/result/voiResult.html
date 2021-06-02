@@ -1,9 +1,31 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
+<!--p>결과 화면</p>
 <button type="button" onclick="location.href='{% url 'guide:base' %}'">
         기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/screw_driver.jpg' %}" style="display:block;">스크류드라이버
+</button-->
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">스크류 드라이버</p>
+        <table class="table">
+                <tr>
+                        <td>
+                                <img src="{% static 'img/screw_driver.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <p style="font-size:19px; color:white;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                제조방법
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <p style="font-size:25px; color:white;">칵테일 유래등의 정보</p>
+                        </td>
+                </tr>
+        </table>
+        <!--정보는 다른 div를 열거나 해서 만들어도 괜찮을거같다.-->
+</div>
 {% endblock %}
