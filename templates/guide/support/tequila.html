@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p style="font-size:18px; color:white;" align="center">두번째로 넣고 싶은 재료를 골라주세요</p>
+<div class="container my-3">
+        <table class="table">
+                <tr>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:w_coffee' %}'">
+                                <img src="{% static 'img/coffee.jpg' %}" style="display:block;">커피
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:wc_result' %}'">
+                                <img src="{% static 'img/cola.jpg' %}" style="display:block;">콜라
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:r_water' %}'">
+                                <img src="{% static 'img/water.jpg' %}" style="display:block;">물
+                                </button>
+                        </td>
+                </tr>
+        </table>
+</div>
+{% endblock %}

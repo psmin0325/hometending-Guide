@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p style="font-size:18px; color:white;" align="center">마지막 첨가물을 선택해주세요</p>
+<button type="button" onclick="location.href='{% url 'guide:r_p_coconut_result' %}'">
+        <img src="{% static 'img/coconut_cream.jpg' %}" style="display:block;">코코넛 크림
+</button>
+{% endblock %}

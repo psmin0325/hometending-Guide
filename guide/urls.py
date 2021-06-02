@@ -35,19 +35,39 @@ urlpatterns = [
     path('rum/', views.rum, name='rum'),
     path('rum/orange/', views.r_orange, name='r_orange'),
     path('rum/orange/ice_result', views.roi_result, name='r_o_ice_result'),
+
     path('rum/cola/', views.r_cola, name='r_cola'),
     path('rum/cola/lime_result', views.rcl_result, name='r_c_lime_result'),
 
+    path('rum/water', views.r_water, name='r_water'),
+    path('rum/water/sugar_result', views.rws_result, name='r_w_sugar_result'),
+
+    path('rum/limejuice/', views.r_limejuice, name='r_limejuice'),
+    path('rum/limejuice/sugar_result', views.rls_result, name='r_l_sugar_result'),
+
+    path('rum/gingerbeer/', views.rg_result, name='r_g_result'),
+
+    path('rum/pineapple/', views.r_pineapple, name='r_pineapple'),
+    path('rum/pineapple/coconut_result/', views.rpc_result, name='r_p_coconut_result'),
 
     path('gin/', views.gin, name='gin'),
     path('gin/limejuice/', views.g_limejuice, name='g_limejuice'),
-    path('gin/limejuice/sugar_result', views.gls_result, name='g_l_sugar_result'),
-    path('gin/limejuice/sparkling_result', views.glsp_result, name='g_l_sparkling_result'),
-    path('gin/limejuice/cider_result', views.glc_result, name='g_l_cider_result'),
-    path('gin/limejuice/tonic_result', views.glt_result, name='g_l_tonic_result'),
+    path('gin/limejuice/sugar_result/', views.gls_result, name='g_l_sugar_result'),
+    path('gin/limejuice/sparkling_result/', views.glsp_result, name='g_l_sparkling_result'),
+    path('gin/limejuice/cider_result/', views.glc_result, name='g_l_cider_result'),
+    path('gin/limejuice/tonic_result/', views.glt_result, name='g_l_tonic_result'),
 
     path('gin/grapefruit/', views.ggf_result, name='ggf_result'),
 
     path('gin/gingerbeer/', views.g_gingerbeer, name='g_gingerbeer'),
-    path('gin/gingerbeer/sparkling_result', views.ggs_result, name='g_g_sparkling_result'),
+    path('gin/gingerbeer/sparkling_result/', views.ggs_result, name='g_g_sparkling_result'),
+
+    path('whisky/', views.whisky, name='whisky'),
+    path('whisky/coffee/', views.w_coffee, name='w_coffee'),
+    path('whisky/coffee/whipping_result/', views.wcw_result, name='w_c_whipping_result'),
+
+    path('whisky/sparkling/', views.w_sparkling, name='w_sparkling'),
+    path('whisky/sparkling/sugar_result/', views.wss_result, name='w_s_sugar_result'),
+
+    path('whisky/cola_result/', views.wc_result, name='wc_result'),
 ]

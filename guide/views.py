@@ -139,6 +139,54 @@ def rcl_result(request):
     """
     return render(request, 'guide/result/rclResult.html')
 
+def rcl_result(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/result/rclResult.html')
+
+def r_water(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/additives/r_water.html')
+
+def rws_result(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/result/rwsResult.html')
+
+def r_limejuice(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/additives/r_limejuice.html')
+
+def rls_result(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/result/rlsResult.html')
+
+def rg_result(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/result/rgResult.html')
+
+def r_pineapple(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/additives/r_pineapple.html')
+
+def rpc_result(request):
+    """
+    r_orange 목록 출력
+    """
+    return render(request, 'guide/result/rpcResult.html')
+
 def gin(request):
     """
     support_vodka 목록 출력
@@ -192,3 +240,39 @@ def ggs_result(request):
     g_limejuice 목록 출력
     """
     return render(request, 'guide/result/ggsResult.html')
+
+def whisky(request):
+    """
+    whisky 목록 출력
+    """
+    return render(request, 'guide/support/whisky.html')
+
+def w_coffee(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/w_coffee.html')
+
+def wcw_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/wcwResult.html')
+
+def w_sparkling(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/additives/w_sparkling.html')
+
+def wss_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/wssResult.html')
+
+def wc_result(request):
+    """
+    g_limejuice 목록 출력
+    """
+    return render(request, 'guide/result/wcResult.html')
