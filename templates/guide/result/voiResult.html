@@ -1,16 +1,14 @@
 {% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<!--p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button-->
 <div class="container my-3">
         <p style="font-size:25px; color:white;" align="right">스크류 드라이버(Screw driver)</p>
         <table class="table">
                 <tr align="center">
                         <td>
-                                <img src="{% static 'img/screw_driver.jpg' %}" style="display:block;">
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/screw_driver.jpg' %}" style="display:block;">
+                                </button>
                         </td>
                         <td>
                                 <p style="font-size:20px;">

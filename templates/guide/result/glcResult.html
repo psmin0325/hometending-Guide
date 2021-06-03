@@ -1,9 +1,44 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/ginfizz.jpg' %}" style="display:block;">진 피즈
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">진 피즈(Gin fizz)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/ginfizz.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+45 ml 진
+25 ml 라임 주스
+사이다 적당량
+
+                                                <제조 방법>
+
+쉐이커에 얼음를 채운다. 진, 라임 주스를 넣는다. 쉐이킹을 한 후 사용하여 하이볼 글래스에 따른다. 사이다를 가득 채운다. 레몬 및 민트잎으로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/gin.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/lime_juice.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/cider.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

@@ -1,9 +1,44 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/cinderella.jpg' %}" style="display:block;">신데렐라
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">신데렐라(Cinderella)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/cinderella.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+60 ml 파인애플 주스
+60 ml 오렌지 주스
+30 ml 레몬에이드
+
+                                                <제조 방법>
+
+하이볼 글래스에 잘게 부순 얼음를 채운다. 모든 재료를 넣는다. 휘저어준다. 레몬으로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/lemonade.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/pineapple_juice.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

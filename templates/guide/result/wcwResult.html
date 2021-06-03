@@ -1,9 +1,45 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/irish_coffee.png' %}" style="display:block;">아이리쉬 커피
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">아이리쉬 커피(Irish coffee)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/irish_coffee.png' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+45 ml 아이리시 위스키
+120 ml 커피
+30 ml 생크림
+설탕 1 스푼
+
+                                                <제조 방법>
+
+와인 글래스에 아이리시 위스키, 황설탕 및 커피를 넣고 휘저어준다. 크림를 띄운다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/whisky.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/coffee.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/whipping_cream.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

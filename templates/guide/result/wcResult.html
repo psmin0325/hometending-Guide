@@ -1,9 +1,40 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/whiskycoke.jpg' %}" style="display:block;">위스키 콕
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">위스키 콕(Whisky coke)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/whiskycoke.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+30ml 위스키
+45ml 콜라
+
+                                                <제조 방법>
+
+하이볼 글래스에 얼음를 채운다. 모든 재료를 넣는다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/whisky.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/cola.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

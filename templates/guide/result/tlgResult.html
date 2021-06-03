@@ -1,9 +1,44 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/cinco_de_mayo.jpg' %}" style="display:block;">싱코 데 마요
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">싱코 데 마요(Cinco de Mayo)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/cinco_de_mayo.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+45 ml 테킬라
+60 ml 라임주스
+15 ml 그레나딘 시럽
+
+                                                <제조 방법>
+
+하이볼 글래스에 얼음를 채운다. 데킬라 및 라임 주스를 넣는다. 그레나딘 시럽을 띄운다. 라임으로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/tequila.jpeg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/lime_juice.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/grenadine.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

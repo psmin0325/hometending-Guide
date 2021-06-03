@@ -1,9 +1,40 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/sunrise.jpeg' %}" style="display:block;">선라이즈
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">선라이즈(Sunrise)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/sunrise.jpeg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+30 ml 그레나딘 시럽
+120 ml 오렌지 주스
+
+                                                <제조 방법>
+
+하이볼 글래스에 얼음를 채운다. 오렌지 주스를 넣는다. 그레나딘 시럽을 띄운다. 오렌지 및 체리로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/grenadine.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

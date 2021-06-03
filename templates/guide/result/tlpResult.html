@@ -1,9 +1,44 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/matador.jpg' %}" style="display:block;">마타도르
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">마타도르(Matador)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/matador.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+30 ml 테킬라
+45 ml 파인애플 주스
+15ml 레모네이드
+
+                                                <제조 방법>
+
+하이볼 글래스에 얼음를 채운다. 모든 재료를 넣는다. 파인애플로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/tequila.jpeg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/pineapple_juice.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/lemonade.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}

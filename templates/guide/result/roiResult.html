@@ -1,12 +1,45 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 {% block content %}
 <div class="container my-3">
-        <p>결과 화면</p>
-        <button type="button" onclick="location.href='{% url 'guide:base' %}'">
-                기주페이지로 돌아가기
-        </button>
-        <img src="{% static 'img/malibu_orange.jpg' %}" style="display:block;">말리부 오렌지
+        <p style="font-size:25px; color:white;" align="right">말리부 오렌지(Malibu orange)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/malibu_orange.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+45 ml 럼
+150 ml 오렌지 주스
+오렌지 1 조각
+
+                                                <제조 방법>
+
+하이볼 글래스에 얼음를 채운다. 모든 재료를 넣는다. 오렌지로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/rum2.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/orange_juice.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/orange.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
 </div>
 {% endblock %}
+

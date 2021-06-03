@@ -1,9 +1,45 @@
-{% extends 'base.html' %}
+{% extends 'result.html' %}
 {% load static %}
 {% block content %}
-<p>결과 화면</p>
-<button type="button" onclick="location.href='{% url 'guide:base' %}'">
-        기주페이지로 돌아가기
-</button>
-<img src="{% static 'img/grog.jpg' %}" style="display:block;">그로그
+<div class="container my-3">
+        <p style="font-size:25px; color:white;" align="right">그로그(Grog)</p>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:base' %}'">
+                                        <img src="{% static 'img/grog.jpg' %}" style="display:block;">
+                                </button>
+                        </td>
+                        <td>
+                                <p style="font-size:20px;">
+                                        <textarea cols="70" rows="12" readonly>
+                                                <준비물>
+
+60 ml 럼
+설탕 1 스푼
+60 ml 끓는 물
+라임
+
+                                                <제조 방법>
+
+믹싱 글래스에 얼음를 채운다. 모든 재료를 넣는다. 휘저어준 후 따르세요. 락 글래스에 따르고 얼음를 채운다. 라임으로 장식한다.
+                                        </textarea>
+                                </p>
+                        </td>
+                </tr>
+        </table>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <img src="{% static 'img/rum2.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/water.jpg' %}" style="display:block;">
+                        </td>
+                        <td>
+                                <img src="{% static 'img/sugar.jpg' %}" style="display:block;">
+                        </td>
+                </tr>
+        </table>
+</div>
 {% endblock %}
