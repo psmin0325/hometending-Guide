@@ -1,0 +1,28 @@
+{% extends 'howToUse.html' %}
+{% load static %}
+{% block content %}
+<h3>활용가이드(How to use)</h3>
+<div class="container my-3">
+        <div style="background-color:#ffffff; color:#000000;">
+                <p style="font-size:18px;">&nbsp 홈텐딩 길라잡이는 집에 있거나 구하기 쉬운 재료들로 구성한 칵테일만을 선정해 마치 길을 찾는 것처럼 이미 소지하고 있는 재료들 혹은 넣어보고 싶은 재료들을 선택해 그에 맞는 칵테일의 명칭과 제조 방법을 알기 쉽게 알려주는 웹 페이지입니다.</p>
+                <p style="font-size:18px;">&nbsp 칵테일에 필요한 기주(베이스로 삼을 술)들과, 각종 과일들을(라임, 오렌지, 레몬) 구비해 두시고, 모든 칵테일은 얼음을 필요로 하니 이 역시 준비해 두신다면 이 웹페이지에 나오는 거의 대부분의 칵테일을 제조할 수 있습니다.</p>
+                <table>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/desc1.png' %}" style="display:block;">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/desc2.png' %}" style="display:block;">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/otherinfo_screen.png' %}" style="display:block;">
+                                </td>
+                        </tr>
+                </table>
+        </div>
+</div>
+{% endblock %}

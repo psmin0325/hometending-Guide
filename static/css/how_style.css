@@ -1,0 +1,14 @@
+img {
+  width: 1000px;
+  height: 600px;
+}
+body {
+  color: white;
+  background-image: url('/static/img/bar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

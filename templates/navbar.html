@@ -1,18 +1,4 @@
-{% load static %}
-<!doctype html>
-<html lang="ko">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-    <!-- hometending CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <title>홈텐딩 길라잡이</title>
-</head>
-<body>
-<!--nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom" style="color:#26b72b;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom" style="color:#26b72b;">
     <a class="navbar-brand" href="{% url 'guide:index' %}" style="font-weight:bold; font-size:20px;">Hometending</a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,15 +18,11 @@
             </li>
         </ul>
     </div>
-</nav-->
-{% include "navbar.html" %}
-<div class="container my-3">
-{% block content %}
-{% endblock %}
-</div>
-<!-- jQuery JS -->
-<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
-<!-- Bootstrap JS -->
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-</body>
-</html>
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'guide:info' %}">Other Info</a>
+            </li>
+        </ul>
+    </div>
+</nav>

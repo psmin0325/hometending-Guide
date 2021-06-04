@@ -9,6 +9,8 @@ urlpatterns = [
 
     path('select/', views.baseAlchohol, name='base'),
 
+    path('how/', views.how, name='how'),
+
     #vodka 영역
     path('vodka/', views.vodka, name='vodka'),
     path('vodka/orange/', views.v_orange, name='v_orange'),
@@ -97,4 +99,9 @@ urlpatterns = [
     path('non/limejuice/', views.n_limejuice, name='n_limejuice'),
     path('non/limejuice/sparkling/', views.n_l_sparkling, name='n_l_sparkling'),
     path('non/limejuice/sparkling/sugar_result/', views.nlss_result, name='n_l_s_sugar_result'),
+
+    path('info/', views.info, name='info'),
+    path('info/tool/', views.tool, name='tool'),
+    path('info/term/', views.term, name='term'),
+    path('info/source/', views.source, name='source'),
 ]

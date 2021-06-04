@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h3>Other Information</h3>
+<div class="container my-3">
+        <div>
+                <div style="font-size:18px; color:white;" align="center">
+                        <p>이 페이지에서는 바텐딩과 관련된 다양한 정보를 얻을 수 있습니다.</p>
+                        <p>간단한 칵테일이라도 더 맛있게 만들어 주는 도구와 방법들을 알아볼 수 있습니다.</p>
+                </div>
+        <table class="table">
+                <tr align="center">
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:tool' %}'">
+                                <img src="{% static 'img/tool.jpg' %}" style="display:block;">바텐딩 도구
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:term' %}'">
+                                <img src="{% static 'img/bartending_term.jpeg' %}" style="display:block;">바텐딩 용어
+                                </button>
+                        </td>
+                        <td>
+                                <button type="button" onclick="location.href='{% url 'guide:source' %}'">
+                                <img src="{% static 'img/source.png' %}" style="display:block;">출처
+                                </button>
+                        </td>
+                </tr>
+        </table>
+        </div>
+</div>
+{% endblock %}

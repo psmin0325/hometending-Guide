@@ -402,3 +402,33 @@ def nlss_result(request):
     g_limejuice 목록 출력
     """
     return render(request, 'guide/result/nlssResult.html')
+
+def how(request):
+    """
+    설명화면
+    """
+    return render(request, 'guide/how.html')
+
+def info(request):
+    """
+    설명화면
+    """
+    return render(request, 'guide/otherInfo.html')
+
+def tool(request):
+    """
+    설명화면
+    """
+    return render(request, 'guide/Info/tool.html')
+
+def term(request):
+    """
+    설명화면
+    """
+    return render(request, 'guide/Info/term.html')
+
+def source(request):
+    """
+    설명화면
+    """
+    return render(request, 'guide/Info/source.html')
