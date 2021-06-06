@@ -1,11 +1,92 @@
-{% extends 'howToUse.html' %}
+{% extends 'bgi.html' %}
 {% load static %}
 {% block content %}
-<h3>바텐딩 도구(Bartending Tool)</h3>
+<h3 style="color:#000000; font-weight:bold; background-color:#ffffff">바텐딩 도구(Bartending Tools)</h3>
 <div class="container my-3">
-        <div style="background-color:#ffffff; color:#000000;">
-                <p style="font-size:18px;">&nbsp 바텐딩 도구 내용</p>
-
+        <div style="background-color:#000000; color:#ffffff;">
+                <table class="table">
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/shaker.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">쉐이커(Shaker)</p>
+<p style="font-size:18px; color:white;">&nbsp보스턴 쉐이커는 아마 바텐딩 도구들 중 가장 상징적인 도구로 손꼽힐 겁니다. 그럴 만한 이유가 있기 때문이죠! 보스턴 쉐이커는 대부분의 칵테일 레시피에서 아주 다양하게 사용되는 도구로, 칵테일을 식히고 희석하고 믹스하고 공기를 넣는 데 사용합니다. 보스턴 쉐이커를 하나 구매할 계획이시라면 틴 온 틴 버전을 추천합니다. 사용하기 쉽고 떨어트려도 쉽게 깨지지 않기 때문이죠. 여의치 않다면 뚜껑이 꽉 닫히는 잼 병 스타일의 제품도 괜찮습니다.</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/jigger.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">지거(Jigger)</p>
+<p style="font-size:18px; color:white;">&nbsp모래시계처럼 생긴 사진의 지거가 가장 흔한 편. 별로 예쁘지는 않으나 정확한 용량에 구하기도 쉽고 가격 또한 싸다. 고급제품으로 가면 미적인 면을 강화시켜 광택이나 길쭉한 모양, 팔각형 등 가지각색의 지거가 보인다. 다만 가격이 크기에 비해 엄청나게 올라가서 부담스러워진다.</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/strainer.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">스트레이너(Strainer)</p>
+<p style="font-size:18px; color:white;">&nbsp대부분의 보스턴 쉐이커에는 호손 스트레이너가 포함되어 있습니다. 칵테일을 셰이킹한 후 과육이나 얼음을 걸러내는 데 유용하죠. 스트레이너가 없다고요? 걱정하지 마세요! 촘촘한 메쉬 소재의 체나 다른 종류의 스트레이너를 이용해도 좋습니다!</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/spout.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">스파웃(Spout)</p>
+<p style="font-size:18px; color:white;">스파웃은 주로 바텐더가 사용하는 도구입니다. 스파웃은 병에 장착하고 사용하는데 항상 같은 양의 술을 따를 수 있다는 장점이 있습니다. 보통은 4초를 따르면 1온스의 양이 나오죠. </p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/muddler.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">머들러(Muddler)</p>
+<p style="font-size:18px; color:white;">&nbsp머들러는 믹싱 용기 안에서 과일, 베리, 허브 등의 재료를 으깨는 데 사용합니다. 잔이나 쉐이커 안에서 재료를 으깨면 재료의 액기스가 도마 위에서 흐르지 않고 칵테일에 잘 스며듭니다. 머들러가 없다면 나무 숟가락이나 밀대를 사용하는 것도 괜찮습니다.</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/paring_knife.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">페어링 나이프-과도(Paring knife)</p>
+<p style="font-size:18px; color:white;">&nbsp날카롭게 잘 벼려진 나이프는 홈 바텐딩 세계에서 없어서는 안되는 도구입니다. 과일을 으깨기 전에 빠르게 썰거나, 가니쉬용 레몬을 얇게 써는 데 사용하죠. 일반적인 식칼도 괜찮습니다만, 사이즈가 더 작은 과도가 사용하기 편합니다.</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/peeler.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">필러(Peeler)</p>
+<p style="font-size:18px; color:white;">&nbsp가니쉬 이야기를 좀 하자면, 여러분의 홈 바에 좋은 필러를 하나 구비해두는 게 좋습니다. 필러가 있으면 전문가처럼 과일 껍질을 벗길 수 있고, 혹시나 손이 미끄러지더라도 페어링 나이프를 쓰는 것보다 다칠 위험이 적습니다. 물론 필러가 없다면 페어링 나이프를 사용하면 됩니다. 솔직히 말해서 작은 나이프보다 필러를 갖고 있을 가능성이 높을 것 같지만요.</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/barspoon.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">바 스푼(Bar Spoon)</p>
+<p style="font-size:18px; color:white;">바 스푼은 가늘고 긴 모양의 숟가락입니다. 이게 있으면 Martini와 Old Fashioned 같은 칵테일을 더 쉽게 휘저을 수 있지요. 우리는 칵테일을 휘저을 때 큐브 얼음이 부서지지 않게 얼음과 액체가 빠르게 움직이도록 휘젓고 싶어 하죠. 바 스푼이 없다면 젓가락으로 휘젓고 티스푼을 이용해 떠내어도 됩니다</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/mixing_glass.jpg' %}" style="display:block;">
+                                </td>
+                                <td style="vertical-align:middle;">
+                                        <p style="font-size:22px; font-weight:bold; color:cyan;">믹싱 글래스(Mixing Glass)</p>
+<p style="font-size:18px; color:white;">액체를 따르기 쉽도록 작은 주둥이가 있는 길고 넓은 모양의 글래스입니다. 다시 한 번 말하지만 잼 병이나 넓은 글래스 용기로 대체할 수 있습니다. 용기 사이즈가 칵테일을 휘저을 때 큐브 얼음이 움직일 수 있을 정도로 충분히 크기만 하면 됩니다.</p>
+                                </td>
+                        </tr>
+                </table>
         </div>
 </div>
 {% endblock %}
